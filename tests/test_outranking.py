@@ -109,3 +109,12 @@ def test_copeland_is_a_signed_count():
 def test_jaccard():
     assert ox.jaccard({1, 2, 3}, {2, 3, 4}) == pytest.approx(0.5)
     assert ox.jaccard(set(), set()) == 1.0 and ox.jaccard({1}, {2}) == 0.0
+
+
+def test_threshold_is_inclusive_a_concordance_equal_to_c_star_outranks():
+    """Mutationstest: a übertrifft b schon bei c(a, b) = c* (mindestens), nicht erst darüber; knapp darunter nicht."""
+    N = np.array([[1.0, 0.0], [0.0, 1.0]])
+    w = np.array([0.6, 0.4])
+    assert ox.concordance(N, w)[0, 1] == pytest.approx(0.6)
+    assert ox.outranking(N, w, 0.6)[0, 1] and not ox.outranking(N, w, 0.6)[1, 0]
+    assert not ox.outranking(N, w, 0.61)[0, 1]
