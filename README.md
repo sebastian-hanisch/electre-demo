@@ -1,7 +1,6 @@
 # ELECTRE: ein schlechter Wert wird nicht ausgeglichen – Streamlit-Demo
 
-<!-- Nach dem Deploy hierher den Live-Link setzen (Leerzeile davor und danach):
-**[→ Demo live ausprobieren](https://sebastianhanisch-electre-demo.streamlit.app/)** -->
+**[→ Demo live ausprobieren](https://sebastianhanisch-electre-demo.streamlit.app/)**
 
 Sechstes Stück der Linie **Mehrkriterien-Ranking** in der „Konzepte“-Reihe für die Website „Sebastian Hanisch – Operations Research und Machine Learning“, Kind der
 [gewichteten Summe](https://github.com/sebastian-hanisch/gewichtete-summe-demo). Die Summe lässt einen sehr guten Wert einen sehr schlechten ausgleichen. ELECTRE vergleicht je
@@ -144,4 +143,4 @@ Gebaut mit Streamlit, Plotly, NumPy, pandas, SciPy und fpdf2.
 
 ---
 
-Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). Mehr zu den Demos: [Interaktive Demos](https://sebastianhanisch.net/demos.html).
+Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). Mehr zur Reihe: [Mehrkriterien-Ranking: von Pareto zum Vergleich](https://sebastianhanisch.net/konzepte-mehrkriterien-ranking.html).
